@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-//a)if character variable taxCode is ’TC’, increase price by adding the taxRate percentage if price to it.
+<!--a)if character variable taxCode is ’TC’, increase price by adding the taxRate percentage if price to it.-->
 <?php
 $taxcode="TC";
 $price=1000;
@@ -13,7 +13,7 @@ if ($taxcode=="TC")
 echo "Price is:- ", $price;
 ?>
     
-//b)	If integer variable opCode has the value 1, read in double values for A and B and calculate and print their sum.
+<!--b)	If integer variable opCode has the value 1, read in double values for A and B and calculate and print their sum.-->
   <?php
 $opCode=1;
 if ($opCode==1)
@@ -24,7 +24,7 @@ if ($opCode==1)
 }
 ?>
 
-//c)	If integer variable currentNumber is odd, change its value so that it is now 3 times currentNumber plus 1, otherwise change its value so that it is now half of currentNumber (rounded down when currentNumber is odd).
+<!--c)	If integer variable currentNumber is odd, change its value so that it is now 3 times currentNumber plus 1, otherwise change its value so that it is now half of currentNumber (rounded down when currentNumber is odd). -->
     <?php
 $currentNumber=22;
 if ($currentNumber%2!=0)
@@ -42,7 +42,7 @@ else
 echo "Number is:-",$currentNumber;
 ?>
 
-//d) d)	Assign true to the boolean variable leapYear if the integer variable year is a leap year. (A leap year is a multiple of 4, and if it is a multiple of 100, it must also be a multiple of 400.)
+<!--d) d)	Assign true to the boolean variable leapYear if the integer variable year is a leap year. (A leap year is a multiple of 4, and if it is a multiple of 100, it must also be a multiple of 400.) -->
     
 <?php 
 $leapYear=NULL;
