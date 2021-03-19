@@ -1,5 +1,7 @@
 <<<<<<< HEAD
 <!DOCTYPE html>
+<title> CREATED BY ANUJ KUMAR MAHATO..
+</title>
 <html>
 <body>
 <!-- a)Write a script which will display the string "The memory of that scene for me is like a frame of film forever frozen at that moment: the red carpet, the green lawn, the white house, the leaden sky. The new president and his first lady. - MAXI" and the words 'red', 'green' and 'white' will come from $color.
