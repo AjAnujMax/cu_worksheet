@@ -19,7 +19,7 @@ Operating System: 98
 Write the code for the above by using associative array. -->
 
 <?php    
-/*create an associate array. */
+/*create an associate array.   */
 
 $student_one = array("programming"=>95, "math"=>90,   
                   "java"=>96, "cloud computing"=>93,   
