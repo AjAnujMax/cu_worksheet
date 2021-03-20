@@ -42,7 +42,7 @@ else
 echo "Number is:-",$currentNumber;
 ?>
 
-<!--d) d)	Assign true to the boolean variable leapYear if the integer variable year is a leap year. (A leap year is a multiple of 4, and if it is a multiple of 100, it must also be a multiple of 400.) -->
+<!--d)Assign true to the boolean variable leapYear if the integer variable year is a leap year. (A leap year is a multiple of 4, and if it is a multiple of 100, it must also be a multiple of 400.) -->
     
 <?php 
 $leapYear=NULL;
