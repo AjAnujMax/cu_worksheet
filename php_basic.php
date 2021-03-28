@@ -563,8 +563,58 @@ echo $cars[3][0].": In stock: ".$cars[3][1].", sold: ".$cars[3][2].".<br>";
   echo "</ul>";
 }
 ?>
+<!--  _____________________________________ Sorting Arrays___________________________ -->
+<!--   
+sort() - sort arrays in ascending order
+rsort() - sort arrays in descending order
+asort() - sort associative arrays in ascending order, according to the value
+ksort() - sort associative arrays in ascending order, according to the key
+arsort() - sort associative arrays in descending order, according to the value
+krsort() - sort associative arrays in descending order, according to the key -->
   
+<!--  Sort Array in Ascending Order - sort()  -->
+  <?php
+$cars = array("Volvo", "BMW", "Toyota");
+sort($cars);
+?>
+ <?php  #number
+$numbers = array(4, 6, 2, 22, 11);
+sort($numbers);
+?> 
+
   
+<!--  Sort Array in Descending Order - rsort()  -->
+ <?php
+$cars = array("Volvo", "BMW", "Toyota");
+rsort($cars);
+?>
+  
+ <?php
+$numbers = array(4, 6, 2, 22, 11);
+rsort($numbers);
+?>
+  
+<!-- Sort Array (Ascending Order), According to Value - asort()  -->
+  <?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+asort($age);
+?>
+<!--  ort Array (Ascending Order), According to Key - ksort()  -->
+  <?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+ksort($age);
+?>
+<!-- Sort Array (Descending Order), According to Value - arsort()   -->
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+arsort($age);
+?>  
+  
+<!-- Sort Array (Descending Order), According to Key - krsort()   -->
+ <?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+krsort($age);
+?>
   
   </body>
 </html> 
