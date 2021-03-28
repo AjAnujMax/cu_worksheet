@@ -335,5 +335,34 @@ if ($t < "10") {
 }
 ?> 
   
+<!--   ___________________________SWITCH CASE   -->
+  
+  <?php
+$favcolor = "red";
+
+switch ($favcolor) {
+  case "red":
+    echo "Your favorite color is red!";
+    break;
+  case "blue":
+    echo "Your favorite color is blue!";
+    break;
+  case "green":
+    echo "Your favorite color is green!";
+    break;
+  default:
+    echo "Your favorite color is neither red, blue, nor green!";
+}
+?>
+  
+  
+<!-- PHP Loops -->
+<!--   while -                loops through a block of code as long as the specified condition is true
+do...while -             loops through a block of code once, and then repeats the loop as long as the specified condition is true
+for -                    loops through a block of code a specified number of times
+foreach -                loops through a block of code for each element in an array -->
+  
+  
+  
   </body>
 </html> 
