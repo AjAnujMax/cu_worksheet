@@ -51,6 +51,8 @@ echo strlen("Hello world!"); // outputs 12
       <th style="text-align: center">&nbsp;</th>
 </table>
 
+<!--  HELLOW WORLD	 -->
+
 <?php
 $txt = "PHP";
 echo "I love $txt!";
