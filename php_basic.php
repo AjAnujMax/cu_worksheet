@@ -213,10 +213,39 @@ echo(round(0.49));  // returns 0
 echo(rand());
 ?>
   
+<!--  ___________________________CONSTANT_________________________________  -->
   
+Create a PHP Constant
+  keyword define()
+  <br>
+<?php
+define("GREETING", "Welcome to W3Schools.com!"); //  case sencitive
+echo GREETING;
+?>
+  <br>
+  
+<!-- constant array   -->
+  <br>
+<?php
+define("cars", [
+  "Alfa Romeo",
+  "BMW",
+  "Toyota"
+]);
+echo cars[0];
+?>
+  
+  
+<!--   Constants are Global -->
+  <?php
+define("GREETING", "Welcome to W3Schools.com!");
+
+function myTest() {
+  echo GREETING;
+}
  
-  
-  
+myTest();
+?>
   
   
   
