@@ -361,6 +361,18 @@ switch ($favcolor) {
 do...while -             loops through a block of code once, and then repeats the loop as long as the specified condition is true
 for -                    loops through a block of code a specified number of times
 foreach -                loops through a block of code for each element in an array -->
+  The PHP foreach Loop
+  foreach ($array as $value) {
+  code to be executed;
+}
+  
+  <?php
+$colors = array("red", "green", "blue", "yellow");
+
+foreach ($colors as $value) {
+  echo "$value <br>";
+}
+?>
   
   
   
