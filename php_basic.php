@@ -180,6 +180,57 @@ $int_cast = (int)$x;
 echo $int_cast;
 ?>
   
+<!-- ________________________________PHP Math__________________________________ -->
+<!--  pi() Function  -->
+ <?php
+echo(pi()); // returns 3.1415926535898
+?> 
+
+<!-- min() and max() Functions -->
+ <?php
+echo(min(0, 150, 30, 20, -8, -200));  // returns -200
+echo(max(0, 150, 30, 20, -8, -200));  // returns 150
+?> 
+  
+<!-- abs() Function  -->
+<?php
+echo(abs(-6.7));  // returns 6.7
+?>
+  
+<!-- sqrt() Function   -->
+ <?php
+echo(sqrt(64));  // returns 8
+?> 
+  
+<!-- round() Function  -->
+ <?php
+echo(round(0.60));  // returns 1
+echo(round(0.49));  // returns 0
+?> 
+ 
+<!--  Random Numbers -->
+<?php
+echo(rand());
+?>
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 
   </body>
