@@ -742,8 +742,75 @@ echo "Study " . $_GET['subject'] . " at " . $_GET['web'];
 </body>
 </html>
   
+<!-- ________________________________ REGULAR EXPRESSION______________________   -->
+<!--   A regular expression is a sequence of characters that forms a search pattern. 
+When you search for data in a text, you can use this search pattern to describe 
+what you are searching for. -->
+<?php  $exp = "/w3schools/i" ?>
+  
+<!--____________________________ preg_match()__________________________________  -->
+  <?php
+$str = "Visit W3Schools";
+$pattern = "/w3schools/i";
+echo preg_match($pattern, $str); // Outputs 1
+?>
+<!--____________________________preg_match_all()__________________________________  -->  
+ <?php
+$str = "The rain in SPAIN falls mainly on the plains.";
+$pattern = "/ain/i";
+echo preg_match_all($pattern, $str); // Outputs 4
+?>
+  
+<!--____________________________preg_replace()__________________________________  -->
+  <?php
+$str = "Visit Microsoft!";
+$pattern = "/microsoft/i";
+echo preg_replace($pattern, "W3Schools", $str); // Outputs "Visit W3Schools!"
+?>
+<!--   
+i	Performs a case-insensitive search
+m	Performs a multiline search (patterns that search for the beginning or end of a string will match the beginning or end of each line)
+u	Enables correct matching of UTF-8 encoded patterns -->
+  
+<!-- 
+_____________Regular Expression Patterns___________________
+Brackets are used to find a range of characters:
+
+Expression	Description
+[abc]	Find one character from the options between the brackets
+[^abc]	Find any character NOT between the brackets
+[0-9]	Find one character from the range 0 to 9  -->
   
   
+<!-- 
+______________________Metacharacters_-______________________
+
+Metacharacter	Description
+|	  Find a match for any one of the patterns separated by | as in: cat|dog|fish
+. 	Find just one instance of any character
+^ 	Finds a match as the beginning of a string as in: ^Hello
+$ 	Finds a match at the end of the string as in: World$
+\d  	Find a digit
+\s  	Find a whitespace character
+\b	   Find a match at the beginning of a word like this: \bWORD, or at the end of a word like this: WORD\b
+\uxxxx  	Find the Unicode character specified by the hexadecimal number xxxx
+-->
+ 
+<!-- ______________________________Quantifiers
+Quantifier	Description
+n+	Matches any string that contains at least one n
+n*	Matches any string that contains zero or more occurrences of n
+n?	Matches any string that contains zero or one occurrences of n
+n{x}	Matches any string that contains a sequence of X n's
+n{x,y}	Matches any string that contains a sequence of X to Y n's
+n{x,}	Matches any string that contains a sequence of at least X n's -->
   
+  
+<!-- ______________________________GLobal____________________________________ -->
+  <?php
+$str = "Apples and bananas.";
+$pattern = "/ba(na){2}/i";
+echo preg_match($pattern, $str); // Outputs 1
+?>
   </body>
 </html> 
