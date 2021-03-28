@@ -30,6 +30,7 @@ print "<h2>" . $txt1 . "</h2>";
 print "Study PHP at " . $txt2 . "<br>";
 print $x + $y;
 ?>
+<br>
 <!-- ___________ PHP Data Types_________________ -->
 <!-- String
 Integer
@@ -48,18 +49,21 @@ echo $x;
 echo "<br>";
 echo $y;
 ?>
+<br>
   
 <!--<!-- ---------------------insteger -->-->
  <?php
 $x = 5985;
 var_dump($x);
 ?>
+<br>
   
 <!--<!-- ---------------------array----->-->
 <?php
 $cars = array("Volvo","BMW","Toyota");
 var_dump($cars);
 ?>  
+<br>
   
 <!--<!-- ---------------------class and object -->-->
 <?php
@@ -81,6 +85,7 @@ echo "<br>";
 $myCar = new Car("red", "Toyota");
 echo $myCar -> message();
 ?> 
+<br>
     
 <!--<!-- ---------------------function and string -->-->
   
@@ -88,6 +93,7 @@ echo $myCar -> message();
 <?php 
   echo strlen("hello world"); //output 12
   ?>
+<br>
  
 <!--  str_wor_count-->
 <?php
