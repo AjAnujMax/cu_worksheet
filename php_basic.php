@@ -30,7 +30,29 @@ print "<h2>" . $txt1 . "</h2>";
 print "Study PHP at " . $txt2 . "<br>";
 print $x + $y;
 ?>
-
-
+<!-- ___________ PHP Data Types_________________ -->
+<!-- String
+Integer
+Float (floating point numbers - also called double)
+Boolean
+Array
+Object
+NULL
+Resource -->
+  
+<!-- ---------------------string  -->
+<?php
+$x = "Hello world!";
+$y = 'Hello world!';
+echo $x;
+echo "<br>";
+echo $y;
+?>
+  
+<!--<!-- ---------------------insteger -->-->
+ <?php
+$x = 5985;
+var_dump($x);
+?>
 </body>
 </html> 
