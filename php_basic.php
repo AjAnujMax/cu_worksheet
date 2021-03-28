@@ -55,13 +55,60 @@ $x = 5985;
 var_dump($x);
 ?>
   
-<!--<!-- ---------------------array -->-->
+<!--<!-- ---------------------array----->-->
 <?php
 $cars = array("Volvo","BMW","Toyota");
 var_dump($cars);
 ?>  
   
+<!--<!-- ---------------------class and object -->-->
+<?php
+class Car {
+  public $color;
+  public $model;
+  public function __construct($color, $model) {
+    $this->color = $color;
+    $this->model = $model;
+  }
+  public function message() {
+    return "My car is a " . $this->color . " " . $this->model . "!";
+  }
+}
+
+$myCar = new Car("black", "Volvo");
+echo $myCar -> message();
+echo "<br>";
+$myCar = new Car("red", "Toyota");
+echo $myCar -> message();
+?> 
+    
+<!--<!-- ---------------------function and string -->-->
   
-  
-</body>
+<!-- strlen() -->
+<?php 
+  echo strlen("hello world"); //output 12
+  ?>
+ 
+<!--  str_wor_count-->
+<?php
+  echo str_word_count("hello world");
+  ?> 
+<br>  
+<!-- strrev()  -->
+  <?php 
+  echo strrev("hello world");
+  ?>
+  <br>
+<!--  strpos()  -->
+<?php
+  echo strpos("hello world"); //output_6
+  ?>
+<br>
+<!--  str_replace  -->
+<?php
+  echo str_replace("hello","anuj ", "hello world"); //output :- hello anuj
+  ?>
+ <br>
+
+  </body>
 </html> 
