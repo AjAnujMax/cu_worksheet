@@ -322,6 +322,18 @@ The value of $x is expr3 if expr1 = FALSE
 The value of $x is expr1 if expr1 exists, and is not NULL.
 If expr1 does not exist, or is NULL, the value of $x is expr2. -->
   
+<!-- _____________________________IF ELSE___________________   -->
+<?php
+$t = date("H");
 
+if ($t < "10") {
+  echo "Have a good morning!";
+} elseif ($t < "20") {
+  echo "Have a good day!";
+} else {
+  echo "Have a good night!";
+}
+?> 
+  
   </body>
 </html> 
