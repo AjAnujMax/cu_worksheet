@@ -54,5 +54,14 @@ echo $y;
 $x = 5985;
 var_dump($x);
 ?>
+  
+<!--<!-- ---------------------array -->-->
+<?php
+$cars = array("Volvo","BMW","Toyota");
+var_dump($cars);
+?>  
+  
+  
+  
 </body>
 </html> 
