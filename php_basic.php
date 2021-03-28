@@ -109,12 +109,78 @@ echo $myCar -> message();
 <?php
   echo strpos("hello world"); //output_6
   ?>
+  
 <br>
 <!--  str_replace  -->
 <?php
   echo str_replace("hello","anuj ", "hello world"); //output :- hello anuj
   ?>
  <br>
+    
+<br>
+<!--  NUMBERS  -->
+ Check if the type of a variable is integer:
+<?php
+$x = 5985;
+var_dump(is_int($x));
+
+$x = 59.85;
+var_dump(is_int($x));
+?>
+ <br>
+ 
+ Check if the type of a variable is float:
+  
+ <?php
+$x = 10.365;
+var_dump(is_float($x));
+?>
+  
+PHP Infinity is_finite() is_infinite()
+Check if a numeric value is finite or infinite:
+ <?php
+$x = 1.9e411;
+var_dump($x);
+?>
+ 
+ PHP NaN
+ Invalid calculation will return a NaN value:
+  <?php
+$x = acos(8);
+var_dump($x);
+?>
+  
+  Check if the variable is numeric:
+  <?php
+$x = 5985;
+var_dump(is_numeric($x));
+
+$x = "5985";
+var_dump(is_numeric($x));
+
+$x = "59.85" + 100;
+var_dump(is_numeric($x));
+
+$x = "Hello";
+var_dump(is_numeric($x));
+?>
+ 
+ PHP Casting Strings and Floats to Integers
+  <?php
+// Cast float to int
+$x = 23465.768;
+$int_cast = (int)$x;
+echo $int_cast;
+
+echo "<br>";
+
+// Cast string to int
+$x = "23465.768";
+$int_cast = (int)$x;
+echo $int_cast;
+?>
+  
+  
 
   </body>
 </html> 
