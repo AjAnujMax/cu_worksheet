@@ -1,8 +1,8 @@
-<!--______________________________ BASIC codes from start_____________________________________ -->
+<!--______________________________________________ BASIC codes from start_____________________________________ -->
 <!-- PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. -->
 
 
-<!-- ___________hello world_______________________________ -->
+<!-- _____________________________________________hello world_______________________________ -->
 <!DOCTYPE html>
 <html>
 <body>
@@ -11,7 +11,7 @@
 echo "My first PHP script!";
 ?>
 <br>
-  <!-- ___________  print __________________ -->
+  <!-- _________________________  print __________________ -->
 <?php
 print "<h2>PHP is Fun!</h2>";
 print "Hello world!<br>";
@@ -19,7 +19,7 @@ print "I'm about to learn PHP!";
 ?>
  
 <br>
-<!-- ___________  variable _________________ -->
+<!-- ________________________  variable _________________ -->
 <?php
 $txt1 = "Learn PHP";
 $txt2 = "W3Schools.com";
@@ -31,7 +31,7 @@ print "Study PHP at " . $txt2 . "<br>";
 print $x + $y;
 ?>
 <br>
-<!-- ___________ PHP Data Types_________________ -->
+<!-- ______________________________ PHP Data Types_________________ -->
 <!-- String
 Integer
 Float (floating point numbers - also called double)
