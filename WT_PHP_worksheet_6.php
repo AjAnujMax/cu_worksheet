@@ -3,19 +3,17 @@
 <title>created by ANUJ KUAMR MAHATO, 03/04/2021</title>
 </head>
 <body>
-<br>
-a)	Write a PHP Calculator class which will accept two values as arguments, then add them, subtract them, multiply them together, or divide them on request. For example :<br>
+ <CENTER>	WORKSHEET-6 </CENTER>
+ <br>
+
+a)	Write a PHP Calculator class which will accept two values as arguments, then add them, subtract them, multiply them together, or divide them on request. <br>For example :<br>
+
 $mycalc = new MyCalculator( 12, 6);<br>
 echo $mycalc- > add(); // Displays 18<br>
 echo $mycalc- > multiply(); // Displays 72 <br>
 <br>
 <br>
 <br>
-
-
-
-
-
 
 
 <?php
@@ -51,48 +49,40 @@ echo $mycalc-> sub()."\n"; //  Output 6
 echo $mycalc-> div()."\n"; // Output 2
 ?>
 
-
-
-
 <br>
 <br>
 <br>
 
-b)	Write a PHP class that sorts an ordered integer array with the help of sort() function. Sample array : array(11, -2, 4, 35, 0, 8, -9)
+b)	Write a PHP class that sorts an ordered integer array with the help of sort() function. <br> Sample array : array(11, -2, 4, 35, 0, 8, -9)
+<br>
 Output : Array ( [0] => -9 [1] => -2 [2] => 0 [3] => 4 [4] => 8 [5] => 11 [6] => 35 )
-
 <br>
 <br>
 <br>
 
+<?php
+class array_sort
+{
+    protected $_asort;
+    
+    public function __construct(array $asort)
+     {
+        $this->_asort = $asort;
+     }
+    public function sorting()
+     {
+        $sorted = $this->_asort;
+        sort($sorted);
+        return $sorted;
+      }
+}
+$sortarray = new array_sort(array(11, -2, 4, 35, 0, 8, -9));
+print_r($sortarray->sorting())."<br>";
+?> 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
 </body>
 </html>
